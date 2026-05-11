@@ -1,0 +1,6 @@
+export { default as LogisticsSolutionsHero } from './LogisticsSolutionsHero'
+export { default as LogisticsServices } from './LogisticsServices'
+export { default as LogisticsNetwork } from './LogisticsNetwork'
+export { default as LogisticsProcess } from './LogisticsProcess'
+export { default as LogisticsCapabilities } from './LogisticsCapabilities'
+export { default as LogisticsPartners } from './LogisticsPartners'

@@ -1,0 +1,5 @@
+export { OceanLanding } from './OceanLanding'
+export { OceanHero } from './OceanHero'
+export { OceanCapabilities } from './OceanCapabilities'
+export { OceanProcess } from './OceanProcess'
+export { OceanCTA } from './OceanCTA'

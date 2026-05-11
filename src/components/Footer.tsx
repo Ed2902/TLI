@@ -1,0 +1,100 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+
+export function Footer() {
+  const services = [
+    'Less Than Truckload (LTL)',
+    'Full Truckload (FTL)',
+    'Temperature-Controlled',
+    'Open Deck & Heavy Haul',
+    'Container Drayage',
+    'Expedited',
+    'Cargo Insurance',
+  ]
+
+  const company = [
+    { label: 'Become a Customer Today', href: '/quote-now' },
+    { label: 'Become an Agent', href: '/quote-now' },
+    { label: 'Work With Us', href: '/quote-now' },
+  ]
+
+  return (
+    <footer className='bg-[#f4f8fb] px-6 py-12 text-[#042c51]'>
+      <div className='mx-auto grid max-w-7xl gap-10 md:grid-cols-[1fr_1fr_1.4fr]'>
+        <div>
+          <Image
+            src='/transport.webp'
+            alt='Transport Logistic International logo'
+            width={150}
+            height={60}
+            className='h-auto w-[150px] object-contain'
+          />
+
+          <ul className='mt-6 space-y-2 text-sm font-semibold text-[#0a4eb6]'>
+            {services.map(service => (
+              <li key={service}>{service}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className='mb-4 text-base font-bold text-[#042c51]'>Company</h2>
+
+          <ul className='space-y-2 text-sm font-semibold'>
+            {company.map(item => (
+              <li key={item.label}>
+                <Link
+                  href={item.href}
+                  className='text-[#0a4eb6] transition hover:text-[#2cad3f]'
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <address className='not-italic'>
+          <div className='rounded-2xl border border-[#0a4eb6]/10 bg-white p-6 shadow-lg'>
+            <p className='font-bold text-[#042c51]'>
+              10049 NW 89th Ave unit 4, Medley, FL 33178
+            </p>
+
+            <a
+              href='tel:+13058876363'
+              className='mt-2 block font-semibold text-[#0a4eb6] transition hover:text-[#2cad3f]'
+            >
+              (305) 887-6363
+            </a>
+
+            <a
+              href='mailto:info@tlimiami.com'
+              className='mt-2 block font-semibold text-[#0a4eb6] transition hover:text-[#2cad3f]'
+            >
+              info@tlimiami.com
+            </a>
+
+            <a
+              href='mailto:spfwya@tlimiami.com'
+              className='mt-2 block font-semibold text-[#0a4eb6] transition hover:text-[#2cad3f]'
+            >
+              spfwya@tlimiami.com
+            </a>
+          </div>
+        </address>
+      </div>
+
+      <div className='mx-auto mt-10 flex max-w-7xl flex-col gap-2 border-t border-[#0a4eb6]/10 pt-6 text-center text-sm font-semibold text-[#042c51]/80 md:flex-row md:items-center md:justify-between md:text-left'>
+        <p>2026 | TLI Miami | All Rights Reserved</p>
+
+        <p>
+          Designed by{' '}
+          <span className='font-bold text-[#2cad3f]'>Greenway Bogotá</span>
+        </p>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer

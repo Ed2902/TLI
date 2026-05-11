@@ -1,0 +1,179 @@
+# Web Transport - Página Web Next.js Optimizada para SEO
+
+Un proyecto Next.js 16 moderno con **sistema de diseño personalizado**, **colores institucionales** (verde #2CAD3F a azul #0A4EB6) y **optimizaciones SEO completas**.
+
+## 🚀 Características
+
+### ✨ Diseño Personalizado
+
+- **Variables CSS globales** para mantenimiento consistente
+- **Gradientes institucionales** únicos y profesionales
+- **Componentes reutilizables** (Button, Hero, Card)
+- **Sistema de espaciado** escalable
+- **Dark mode automático**
+
+### 🎯 Optimizado para SEO
+
+- Metadata API nativa de Next.js
+- Estructura HTML semántica
+- Server-side rendering (SSR)
+- Static generation (SSG)
+- Imágenes optimizadas
+- Rendimiento ultrarrápido (Turbopack)
+
+### 🛠 Stack Tecnológico
+
+- **Next.js 16.2.4** con Turbopack
+- **React 19** + TypeScript
+- **Tailwind CSS 4** personalizado
+- **ESLint** para código limpio
+- **Sin dependencias pesadas**
+
+## 📂 Estructura del Proyecto
+
+```
+src/
+├── app/                    # Rutas y páginas
+│   ├── page.tsx           # Página principal demo
+│   ├── layout.tsx         # Layout base
+│   └── globals.css        # Variables CSS globales
+├── components/            # Componentes reutilizables
+│   ├── Button.tsx         # Botón con gradientes
+│   ├── Hero.tsx           # Sección hero
+│   ├── Card.tsx           # Tarjeta flexible
+│   └── index.ts           # Exportaciones
+└── lib/
+    └── styles.ts          # Utilidades CSS
+```
+
+## 🎨 Colores Institucionales
+
+| Color          | Hex       | Uso              |
+| -------------- | --------- | ---------------- |
+| Verde Primario | `#2CAD3F` | Acento principal |
+| Azul Primario  | `#0A4EB6` | Botones y links  |
+| Azul Oscuro    | `#042C51` | Títulos y texto  |
+
+**Gradientes disponibles:**
+
+- Primario: Verde → Azul
+- Secundario: Azul Oscuro → Azul
+- Accent: Verde → Azul Oscuro → Azul
+
+## 🏃 Inicio Rápido
+
+### 1. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 2. Desarrollo local
+
+```bash
+npm run dev
+```
+
+→ Abre [http://localhost:3000](http://localhost:3000)
+
+### 3. Build para producción
+
+```bash
+npm run build
+npm run start
+```
+
+## 📝 Componentes Disponibles
+
+### Button
+
+```tsx
+import { Button } from '@/components'
+;<Button variant='primary' size='lg'>
+  Texto
+</Button>
+// variant: primary | secondary | outline
+// size: sm | md | lg
+```
+
+### Hero
+
+```tsx
+<Hero
+  title='Título Grande'
+  subtitle='Descripción'
+  ctaText='Botón CTA'
+  backgroundType='gradient-primary'
+/>
+```
+
+### Card
+
+```tsx
+<Card title='Título' description='Descripción' highlighted={true} />
+```
+
+## 🔍 SEO Incluido
+
+✅ Open Graph tags  
+✅ Meta descriptions  
+✅ Sitemap compatible  
+✅ Robots.txt support  
+✅ Structured data ready  
+✅ Mobile optimized  
+✅ Core Web Vitals friendly
+
+## 🎓 Variables CSS
+
+Definidas en `src/app/globals.css`:
+
+```css
+/* Colores */
+--primary-green: #2cad3f --primary-blue: #0a4eb6 --primary-dark-blue: #042c51
+  /* Espaciado */ --spacing-xs/sm/md/lg/xl/2xl /* Gradientes */
+  --gradient-primary --gradient-secondary --gradient-accent;
+```
+
+## 📚 Documentación Completa
+
+Para guía detallada del sistema de diseño:
+→ Ver [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md)
+
+## 🔧 Comandos npm
+
+```bash
+npm run dev      # Desarrollo local
+npm run build    # Compilar producción
+npm run start    # Servidor producción
+npm run lint     # Verificar código
+```
+
+## 💡 Próximos Pasos
+
+1. **Personalizar contenido** en `src/app/page.tsx`
+2. **Crear nuevas páginas** en `src/app/`
+3. **Agregar componentes** en `src/components/`
+4. **Configurar dominio** y deployment
+5. **Agregar analytics** (GA4, etc.)
+
+## 📦 Dependencias Principales
+
+- `next` - Framework React
+- `react` & `react-dom` - UI
+- `tailwindcss` - Estilos CSS
+- `typescript` - Type safety
+- `eslint` - Linting
+
+## 🚀 Deployment
+
+Listo para desplegar en:
+
+- **Vercel** (recomendado)
+- **Netlify**
+- **AWS**
+- **Azure**
+- **Cualquier servidor Node.js**
+
+---
+
+**Hecho con ❤️ para máximo rendimiento y SEO**
