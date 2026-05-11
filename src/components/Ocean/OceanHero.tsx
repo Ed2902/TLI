@@ -3,18 +3,18 @@ import React from 'react'
 export function OceanHero() {
   return (
     <section
-      className='relative overflow-hidden bg-white px-6 py-16 text-slate-900'
+      className='relative overflow-hidden bg-white px-6 py-12 md:py-16 text-slate-900'
       data-aos='fade-up'
     >
-      <div className='mx-auto flex w-full max-w-7xl flex-col gap-10 lg:flex-row lg:items-end lg:justify-between'>
+      <div className='mx-auto flex w-full max-w-7xl flex-col gap-6 md:gap-10 lg:flex-row lg:items-end lg:justify-between'>
         <div className='max-w-3xl'>
-          <p className='mb-4 text-sm font-bold uppercase tracking-[0.35em] text-[#0a4eb6]'>
+          <p className='mb-4 text-xs md:text-sm font-bold uppercase tracking-[0.35em] text-[#0a4eb6]'>
             Ocean Freight
           </p>
-          <h1 className='text-4xl font-extrabold leading-tight text-slate-900 md:text-6xl'>
+          <h1 className='text-2xl md:text-4xl lg:text-6xl font-extrabold leading-tight text-slate-900'>
             Reliable ocean shipping services for international cargo transport.
           </h1>
-          <p className='mt-6 max-w-2xl text-lg leading-8 text-slate-600'>
+          <p className='mt-4 md:mt-6 max-w-2xl text-sm md:text-base lg:text-lg leading-7 md:leading-8 text-slate-600'>
             We handle full container, partial loads, and project cargo with a
             focus on visibility, coordination, and cost-effective transit across
             major global trade lanes.
@@ -101,3 +101,4 @@ export function OceanHero() {
     </section>
   )
 }
+

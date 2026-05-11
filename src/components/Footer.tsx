@@ -21,7 +21,7 @@ export function Footer() {
 
   return (
     <footer className='bg-[#f4f8fb] px-6 py-12 text-[#042c51]'>
-      <div className='mx-auto grid max-w-7xl gap-10 md:grid-cols-[1fr_1fr_1.4fr]'>
+      <div className='mx-auto grid max-w-7xl gap-6 md:gap-10 md:grid-cols-[1fr_1fr_1.4fr]'>
         <div>
           <Image
             src='/transport.webp'
@@ -98,3 +98,4 @@ export function Footer() {
 }
 
 export default Footer
+

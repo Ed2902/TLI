@@ -64,18 +64,18 @@ export function QuoteNowForm() {
 
   return (
     <section
-      className='relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100 px-6 py-16'
+      className='relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100 px-6 py-12 md:py-16'
       data-aos='fade-up'
     >
       <div className='absolute left-[-48px] top-10 h-44 w-44 rounded-full bg-[#0a4eb6]/5 blur-3xl' />
       <div className='absolute right-[-44px] bottom-0 h-56 w-56 rounded-full bg-[#2cad3f]/5 blur-3xl' />
 
-      <div className='relative mx-auto w-full max-w-2xl'>
+      <div className='relative mx-auto w-full max-w-2xl px-2 md:px-0'>
         {/* Progress Bar */}
-        <div className='mb-12 flex items-center justify-between'>
-          <div className='flex flex-1 items-center gap-2'>
+        <div className='mb-8 md:mb-12 flex items-center justify-between'>
+          <div className='flex flex-1 items-center gap-1 md:gap-2'>
             <div
-              className={`flex h-10 w-10 items-center justify-center rounded-full font-bold text-white transition-all ${
+              className={`flex h-8 md:h-10 w-8 md:w-10 items-center justify-center rounded-full text-xs md:text-sm font-bold text-white transition-all ${
                 step >= 1 ? 'bg-[#0a4eb6]' : 'bg-slate-300'
               }`}
             >
@@ -87,7 +87,7 @@ export function QuoteNowForm() {
               }`}
             />
             <div
-              className={`flex h-10 w-10 items-center justify-center rounded-full font-bold text-white transition-all ${
+              className={`flex h-8 md:h-10 w-8 md:w-10 items-center justify-center rounded-full text-xs md:text-sm font-bold text-white transition-all ${
                 step >= 2 ? 'bg-[#0a4eb6]' : 'bg-slate-300'
               }`}
             >
@@ -99,7 +99,7 @@ export function QuoteNowForm() {
               }`}
             />
             <div
-              className={`flex h-10 w-10 items-center justify-center rounded-full font-bold text-white transition-all ${
+              className={`flex h-8 md:h-10 w-8 md:w-10 items-center justify-center rounded-full text-xs md:text-sm font-bold text-white transition-all ${
                 step >= 3 ? 'bg-[#2cad3f]' : 'bg-slate-300'
               }`}
             >
@@ -110,12 +110,12 @@ export function QuoteNowForm() {
 
         {/* Step 1: Shipment Type & Route */}
         {step === 1 && (
-          <div className='space-y-8 animate-fadeIn' data-aos='fade-up'>
+          <div className='space-y-6 md:space-y-8 animate-fadeIn' data-aos='fade-up'>
             <div>
-              <h2 className='text-2xl font-bold text-slate-900'>
+              <h2 className='text-xl md:text-2xl font-bold text-slate-900'>
                 What are you shipping?
               </h2>
-              <p className='mt-2 text-slate-600'>Select your shipment type</p>
+              <p className='mt-1 md:mt-2 text-sm md:text-base text-slate-600'>Select your shipment type</p>
             </div>
 
             {/* Shipment Type Cards */}

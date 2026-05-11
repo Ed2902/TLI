@@ -55,7 +55,7 @@ export default function LogisticsCapabilities() {
       <div className='mx-auto w-full max-w-7xl px-6'>
         {/* Section Header */}
         <div className='mb-16 max-w-3xl' data-aos='fade-up'>
-          <p className='mb-2 text-sm font-bold uppercase tracking-[0.3em] text-[#2cad3f]'>
+          <p className='mb-2 text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-[#2cad3f]'>
             Why Choose Us
           </p>
           <h2 className='text-4xl font-extrabold leading-tight text-slate-900 md:text-5xl'>
@@ -68,7 +68,7 @@ export default function LogisticsCapabilities() {
         </div>
 
         {/* Capabilities Grid */}
-        <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='grid gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-4'>
           {capabilities.map((cap, idx) => (
             <div
               key={idx}
@@ -106,3 +106,4 @@ export default function LogisticsCapabilities() {
     </section>
   )
 }
+

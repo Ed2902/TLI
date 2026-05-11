@@ -56,19 +56,19 @@ export function LoginForm() {
           <div className='absolute inset-0 bg-[linear-gradient(0deg,transparent_24%,rgba(10,78,182,.1)_25%,rgba(10,78,182,.1)_26%,transparent_27%,transparent_74%,rgba(10,78,182,.1)_75%,rgba(10,78,182,.1)_76%,transparent_77%,transparent),linear-gradient(90deg,transparent_24%,rgba(10,78,182,.1)_25%,rgba(10,78,182,.1)_26%,transparent_27%,transparent_74%,rgba(10,78,182,.1)_75%,rgba(10,78,182,.1)_76%,transparent_77%,transparent)] bg-[length:50px_50px]' />
         </div>
 
-        <div className='relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-center gap-12 md:flex-row md:justify-between'>
+        <div className='relative z-10 mx-auto flex h-full max-w-6xl flex-col items-center justify-center gap-8 md:gap-12 md:flex-row md:justify-between'>
           {/* Left side - Branding */}
           <div
-            className='max-w-md text-white md:max-w-lg'
+            className='w-full max-w-md text-white md:max-w-lg'
             data-aos='fade-right'
           >
-            <div className='mb-6 inline-block rounded-2xl border-2 border-white/40 bg-gradient-to-r from-[#0a4eb6]/20 to-[#18aeea]/20 px-6 py-3 backdrop-blur-sm'>
-              <p className='text-sm font-bold uppercase tracking-[0.2em] text-[#18aeea]'>
+            <div className='mb-4 md:mb-6 inline-block rounded-2xl border-2 border-white/40 bg-gradient-to-r from-[#0a4eb6]/20 to-[#18aeea]/20 px-6 py-3 backdrop-blur-sm'>
+              <p className='text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-[#18aeea]'>
                 Welcome Back
               </p>
             </div>
 
-            <h1 className='text-4xl font-extrabold leading-tight md:text-5xl'>
+            <h1 className='text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight'>
               Access Your
               <br />
               <span className='bg-gradient-to-r from-[#18aeea] via-[#0a4eb6] to-[#2cad3f] bg-clip-text text-transparent'>
@@ -77,14 +77,14 @@ export function LoginForm() {
             </h1>
 
             <p
-              className='mt-6 text-lg font-semibold text-white'
+              className='mt-4 md:mt-6 text-base md:text-lg font-semibold text-white'
               style={{ color: '#ffffff' }}
             >
               Manage your shipments, track cargo, and get real-time updates on
               your logistics operations.
             </p>
 
-            <div className='mt-8 space-y-4'>
+            <div className='mt-6 md:mt-8 space-y-3 md:space-y-4'>
               {[
                 { icon: '📍', label: 'Real-time tracking' },
                 { icon: '📊', label: 'Analytics dashboard' },
@@ -104,20 +104,20 @@ export function LoginForm() {
           </div>
 
           {/* Right side - Login Form */}
-          <div className='w-full max-w-md' data-aos='fade-left'>
+          <div className='w-full max-w-md px-2 md:px-0' data-aos='fade-left'>
             <form
               onSubmit={handleSubmit}
-              className='animated-form-border relative rounded-3xl p-0.5'
+              className='animated-form-border relative rounded-2xl md:rounded-3xl p-0.5'
             >
-              <div className='relative rounded-3xl bg-slate-900/80 p-8 backdrop-blur-xl shadow-2xl'>
-                <div className='space-y-6'>
+              <div className='relative rounded-2xl md:rounded-3xl bg-slate-900/80 p-6 md:p-8 backdrop-blur-xl shadow-2xl'>
+                <div className='space-y-4 md:space-y-6'>
                   {/* Email Field */}
                   <div
                     className='group'
                     data-aos='fade-up'
                     data-aos-delay='100'
                   >
-                    <label className='mb-3 block text-sm font-bold uppercase tracking-wide text-white/80'>
+                    <label className='mb-2 md:mb-3 block text-xs md:text-sm font-bold uppercase tracking-wide text-white/80'>
                       Email Address
                     </label>
                     <div className='relative'>
@@ -141,8 +141,8 @@ export function LoginForm() {
                     data-aos='fade-up'
                     data-aos-delay='150'
                   >
-                    <label className='mb-3 flex items-center justify-between'>
-                      <span className='block text-sm font-bold uppercase tracking-wide text-white/80'>
+                    <label className='mb-2 md:mb-3 flex items-center justify-between'>
+                      <span className='block text-xs md:text-sm font-bold uppercase tracking-wide text-white/80'>
                         Password
                       </span>
                       <a
@@ -178,7 +178,7 @@ export function LoginForm() {
                       id='remember'
                       className='h-4 w-4 rounded border-2 border-white/50 bg-white/5 accent-white'
                     />
-                    <label htmlFor='remember' className='text-sm text-white/70'>
+                    <label htmlFor='remember' className='text-xs md:text-sm text-white/70'>
                       Keep me signed in
                     </label>
                   </div>
@@ -187,7 +187,7 @@ export function LoginForm() {
                   <button
                     type='submit'
                     disabled={isLoading}
-                    className='group relative mt-8 w-full overflow-hidden rounded-xl bg-gradient-to-r from-[#0a4eb6] via-[#18aeea] to-[#2cad3f] px-6 py-3 font-bold uppercase tracking-wide text-white shadow-lg transition disabled:opacity-70'
+                    className='group relative mt-6 md:mt-8 w-full overflow-hidden rounded-lg md:rounded-xl bg-gradient-to-r from-[#0a4eb6] via-[#18aeea] to-[#2cad3f] px-6 py-2.5 md:py-3 font-bold uppercase tracking-wide text-xs md:text-sm text-white shadow-lg transition disabled:opacity-70'
                     data-aos='zoom-in'
                     data-aos-delay='250'
                   >
@@ -210,14 +210,14 @@ export function LoginForm() {
 
                   {/* Divider */}
                   <div
-                    className='relative my-8'
+                    className='relative my-6 md:my-8'
                     data-aos='fade-up'
                     data-aos-delay='300'
                   >
                     <div className='absolute inset-0 flex items-center'>
                       <div className='w-full border-t border-white/10' />
                     </div>
-                    <div className='relative flex justify-center text-sm'>
+                    <div className='relative flex justify-center text-xs md:text-sm'>
                       <span className='bg-gradient-to-br from-white/10 via-white/5 to-white/10 px-3 text-white/50'>
                         or
                       </span>
@@ -234,7 +234,7 @@ export function LoginForm() {
                       <button
                         key={provider}
                         type='button'
-                        className='rounded-lg border-2 border-white/30 bg-white/5 px-3 py-2 text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/10'
+                        className='rounded-lg border-2 border-white/30 bg-white/5 px-2 md:px-3 py-2 text-xs md:text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/10'
                       >
                         {provider === 'Google' && '🔵'}
                         {provider === 'LinkedIn' && '💼'}
@@ -245,7 +245,7 @@ export function LoginForm() {
 
                   {/* Sign Up Link */}
                   <p
-                    className='text-center text-sm text-white/60'
+                    className='text-center text-xs md:text-sm text-white/60'
                     data-aos='fade-up'
                     data-aos-delay='400'
                   >
